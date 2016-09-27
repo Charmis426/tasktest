@@ -1,0 +1,212 @@
+/*! Reset style **/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+a, input, button {
+  outline: none;
+}
+
+.icon-sprite, .icon-star-blue, .icon-star-green, .icon-star-red, .icon-star-yellow, .star-input:checked ~ label, .star-label:hover, .star-label:hover ~ label, .icon-star, .star-label {
+  background-image: url('../images/icon-s44a1db59b7.png');
+  background-repeat: no-repeat;
+}
+
+.icon-star-blue {
+  background-position: 0 0;
+  height: 16px;
+  width: 18px;
+}
+
+.icon-star-green {
+  background-position: 0 -26px;
+  height: 16px;
+  width: 18px;
+}
+
+.icon-star-red {
+  background-position: 0 -52px;
+  height: 16px;
+  width: 18px;
+}
+
+.icon-star-yellow, .star-input:checked ~ label, .star-label:hover, .star-label:hover ~ label {
+  background-position: 0 -78px;
+  height: 16px;
+  width: 18px;
+}
+
+.icon-star, .star-label {
+  background-position: 0 -104px;
+  height: 16px;
+  width: 18px;
+}
+
+/*! BASE STYLE */
+.wrap {
+  max-width: 960px;
+  margin: 50px auto;
+  display: block;
+  width: 100%;
+  font-family: 'Verdana', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media (max-width: 1000px) {
+  .wrap {
+    padding: 0 20px;
+  }
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+h1 {
+  font-size: 150%;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 120%;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.buttons-block {
+  margin-top: 50px;
+}
+
+/*! STARS */
+.stars {
+  overflow: hidden;
+  *zoom: 1;
+  position: relative;
+  float: left;
+}
+
+.star-input {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  display: none;
+  visibility: hidden;
+}
+
+.star-label {
+  float: right;
+  cursor: pointer;
+  margin-right: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+/*! BUTTON */
+.button {
+  border-radius: 6px;
+  background-image: -moz-linear-gradient(0deg, #e2e2e2 30%, #f2f2f2 70%);
+  background-image: -webkit-linear-gradient(0deg, #e2e2e2 30%, #f2f2f2 70%);
+  background-image: -ms-linear-gradient(0deg, #e2e2e2 30%, #f2f2f2 70%);
+  background-image: linear-gradient(0deg, #e2e2e2 30%, #f2f2f2 70%);
+  display: block;
+  width: 100%;
+  max-width: 86px;
+  line-height: 24px;
+  padding: 0;
+  box-shadow: 0 1px 1px #a8a8a8;
+  font-size: 11px;
+  text-align: center;
+  color: #000;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+  border: 1px solid #e5e5e5;
+  margin: 20px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Verdana',sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+.button:hover {
+  background-image: -moz-linear-gradient(0deg, #fdffcc 30%, #feffeb 70%);
+  background-image: -webkit-linear-gradient(0deg, #fdffcc 30%, #feffeb 70%);
+  background-image: -ms-linear-gradient(0deg, #fdffcc 30%, #feffeb 70%);
+  background-image: linear-gradient(0deg, #fdffcc 30%, #feffeb 70%);
+}
+.button:focus {
+  box-shadow: 0 0 4px 0 rgba(0, 35, 214, 0.94);
+  background-image: -moz-linear-gradient(0deg, #e2e2e2 30%, #f2f2f2 70%);
+  background-image: -webkit-linear-gradient(0deg, #e2e2e2 30%, #f2f2f2 70%);
+  background-image: -ms-linear-gradient(0deg, #e2e2e2 30%, #f2f2f2 70%);
+  background-image: linear-gradient(0deg, #e2e2e2 30%, #f2f2f2 70%);
+}
+.button:active {
+  background-image: -moz-linear-gradient(0deg, #e2e2e2 30%, #f2f2f2 70%);
+  background-image: -webkit-linear-gradient(0deg, #e2e2e2 30%, #f2f2f2 70%);
+  background-image: -ms-linear-gradient(0deg, #e2e2e2 30%, #f2f2f2 70%);
+  background-image: linear-gradient(0deg, #e2e2e2 30%, #f2f2f2 70%);
+  box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, 0.26);
+  text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.75);
+  padding-top: 1px;
+  line-height: 23px;
+}

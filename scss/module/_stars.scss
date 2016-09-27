@@ -1,0 +1,32 @@
+/*! STARS */
+$color: 'yellow'; //yellow, red, green, blue;
+
+.stars {
+  overflow: hidden;
+  *zoom: 1;
+  position: relative;
+  float: left;
+}
+.star-input {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  display: none;
+  visibility: hidden;
+  &:checked ~ label {
+    @extend .icon-star-#{$color};
+  }
+}
+.star-label {
+  @extend .icon-star;
+  float: right;
+  cursor: pointer;
+  margin-right: 10px;
+  position: relative;
+  z-index: 1;
+  &:hover, &:hover ~ label {
+    @extend .icon-star-#{$color};
+  }
+}
